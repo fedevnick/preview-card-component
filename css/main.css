@@ -1,0 +1,123 @@
+*{
+    box-sizing: inherit;    
+}
+
+html {
+    font-size: 10px;
+    word-spacing: 1.2px;
+    box-sizing: border-box;
+
+    color: rgb(218, 218, 218);
+    background-color: rgb(21, 31, 51);
+}
+
+.container {
+    width: 320px;
+    margin: 10vh auto;
+    padding: 20px 40px 40px;
+    border-radius: 20px;
+
+    background-color: rgb(20, 29, 48) ;
+
+    box-shadow: 0 20px 0 0 rgb(20, 29, 48);
+} 
+
+.card {
+    padding: 15px;
+    border: 1px solid rgb(27, 45, 70);
+    border-radius: 10px;
+
+    background-color: rgb(26, 44, 66);
+    box-shadow: 0 15px 0 10px rgb(14, 23, 41) ;
+}
+
+.card__image {
+    height: 200px;
+    border-radius: 5px;
+    
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;    
+}
+
+.card__information {
+    margin: 15px 0;
+}
+
+.card__information .name {
+    
+    font-size: 1.6rem;
+    font-weight: bold;
+    color:rgb(219, 219, 219);
+
+} 
+
+.card__information .description {
+    font-weight: small;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color:rgba(190, 209, 229, 0.596);
+}
+
+.card__information .price-and-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.2rem;
+}
+
+.card__information .price {
+    color: aqua;
+}
+
+.card__information .price img, 
+.card__information .time img {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+
+.card__information .time {
+    color: rgba(190, 209, 229, 0.596);
+}
+
+.card__information::after {
+    content: "";
+
+    position: relative;
+    top: 15px;
+    
+    display: block;
+    height: 0.2px;
+    width: 100%;
+    background-color: rgba(190, 209, 229, 0.596);
+}
+
+.card__author {
+    height: 50px;
+    padding: 10px 0;
+    padding-top: 15px;
+
+    font-size: 1.2rem;
+    color: rgba(190, 209, 229, 0.596);
+}
+
+.card__author-image {
+
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;  
+    height: 26px;
+    width: 26px;
+    margin-right: 8px;
+    vertical-align: middle;
+
+    background-image: url(../images/image-avatar.png);
+    background-size: cover;
+}
+
+
+.card__author  a {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+}
